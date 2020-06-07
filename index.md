@@ -3,7 +3,7 @@ Welcome to StartDeutsch Project
 Here I want to document my amazing journey of developing a full-stack project🙂.
 
 # iOS Development
-![](https://img.shields.io/badge/ios-13.0-green)  ![](https://img.shields.io/badge/codecoverage-20%25-yellow)
+![](https://img.shields.io/badge/ios-13.0-green)  ![](https://img.shields.io/badge/swift-5.0-green)  ![](https://img.shields.io/badge/codecoverage-20%25-yellow)
 
 ##  🏰 Architecture
 The design pattern is MVVM. Reasons for chosing it:
