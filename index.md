@@ -3,6 +3,7 @@ Welcome to StartDeutsch Project
 Here I want to document my amazing journey of developing a full-stack project🙂.
 
 # iOS Development
+![](https://img.shields.io/badge/ios-13.0-green)  ![](https://img.shields.io/badge/codecoverage-20%25-yellow)
 
 ##  🏰 Architecture
 The design pattern is MVVM. Reasons for chosing it:
@@ -10,7 +11,7 @@ The design pattern is MVVM. Reasons for chosing it:
 2. Since the project is relatively small, it is suitable for the size of project.
 3. Allows to easily test data flow from remote and local sources.
 
-The architecture consists of the following parts:
+The detailed architecture is represented as UML diagram and could be found [here](https://app.lucidchart.com/documents/view/d28925f7-f7d8-4d7f-8a9d-4ae9cf3c04ae/0_0). Briefly, main roles holders are:
 
 ### Dependency Container 
 I found about Dependency Container while reading Advanced iOS App Architecture. I needed one place to manage the lifetime of dependencies to be injected to the View Models such as APIClient, Request Builder, CoreDataRepository etc. So, Dependency Container was developed for this purpose. Also, it is responsible for creating View Controllers and View Models.
@@ -20,8 +21,6 @@ Handles navigation flow and uses dependency container to create view controllers
 
 ### APIClient
 The Network heart of the project. Responsible for fetching data from REST API and refreshing token. Teamed up with Combine.
-
-The detailed architecture is represented as UML diagram and could be found [here](https://app.lucidchart.com/documents/view/d28925f7-f7d8-4d7f-8a9d-4ae9cf3c04ae/0_0).
 
 # 📬 Back-end Development
 
