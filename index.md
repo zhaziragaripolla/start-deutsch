@@ -54,7 +54,7 @@ Having this token allows iOS Client to make a secured call to our API. Isn't tha
 # 🏘 AWS Infrastructure
 
 Django application should be living somewhere🤔. Well, we can use Amazon Web Services(AWS) to host it. The infrastructure is following:
-
+![](aws-infrastructure.png)
 
 # 📚References to the learning resources I studied along the way
 
