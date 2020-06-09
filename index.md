@@ -11,6 +11,7 @@ The design pattern is MVVM. Reasons for chosing it:
 2. Since the project is relatively small, it is suitable for the size of project.
 3. Allows to easily test data flow from remote and local sources.
 
+The source code is [here](https://github.com/zhaziragaripolla/StartDeutsch/tree/master/StartDeutsch).
 The detailed architecture is represented as UML diagram and could be found [here](https://app.lucidchart.com/documents/view/d28925f7-f7d8-4d7f-8a9d-4ae9cf3c04ae/0_0). Briefly, main roles holders are:
 
 ### [Dependency Container](https://github.com/zhaziragaripolla/StartDeutsch/blob/master/StartDeutsch/Supporting%20files/AppDependencyContainer.swift)
