@@ -13,13 +13,16 @@ The design pattern is MVVM. Reasons for chosing it:
 
 The detailed architecture is represented as UML diagram and could be found [here](https://app.lucidchart.com/documents/view/d28925f7-f7d8-4d7f-8a9d-4ae9cf3c04ae/0_0). Briefly, main roles holders are:
 
-### Dependency Container 
-I found about Dependency Container while reading Advanced iOS App Architecture. I needed one place to manage the lifetime of dependencies to be injected to the View Models such as APIClient, Request Builder, CoreDataRepository etc. So, Dependency Container was developed for this purpose. Also, it is responsible for creating View Controllers and View Models.
+### [Dependency Container](https://github.com/zhaziragaripolla/StartDeutsch/blob/master/StartDeutsch/Supporting%20files/AppDependencyContainer.swift)
+My intention was to build a maintanable, easy-to-understand, testable code. Well, how to achieve this goal? Firstly, I needed one place to manage the lifetime of dependencies to be injected to the View Models such as APIClient, Request Builder, CoreDataRepository etc. So, I found about Dependency Container while reading Advanced iOS App Architecture and here it is:
 
-### Coordinator
-Handles navigation flow and uses dependency container to create view controllers where needed.
+![](dependency_container.png)
+Looks good!
 
-### APIClient
+### [Coordinator](https://github.com/zhaziragaripolla/StartDeutsch/blob/master/StartDeutsch/Routing/AppCoordinator.swift)
+Let's add a Coordinator to handle navigation flow and use dependency container to create view controllers where needed.
+
+### [APIClient](https://github.com/zhaziragaripolla/StartDeutsch/blob/master/StartDeutsch/Networking/APIClient.swift)
 The Network heart of the project. Responsible for fetching data from REST API and refreshing token. Teamed up with Combine.
 
 # 📬 Back-end Development
